@@ -1,0 +1,26 @@
+
+/* Clip-path polygon */
+
+$polygon-left: polygon(0 0, 100% 0, 67% 100%, 0% 100%);
+$polygon-right: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+$title-section-polygon: polygon(0 0, 100% 0, 100% 65%, 0 100%);
+$straight-title-section-polygon: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+$left-title-section-polygon: polygon(0 0, 100% 0, 100% 100%, 0 67%);
+$polygon-default: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+/* Colors */
+
+$title_bg: #071739;
+$page_font_color: #ffffff;
+$block_bg: #ffffff;
+
+
+/* Fonts */
+
+$title_font: 'Cormorant Garamond', serif;
+$content_font: 'Roboto', sans-serif;
+$number: 'EB Garamond', serif;
+
+/* Others variables */
+
+$box-shadow: 0 3px 9px 3px rgba(22, 22, 31, 0.17);
