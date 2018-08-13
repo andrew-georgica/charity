@@ -1,73 +1,66 @@
 
-$(document).ready(function() {
-
-  $("#owl-1").owlCarousel({
-
-      autoPlay: 35000, //Set AutoPlay to 3 seconds
-
-      items : 1,
-      itemsDesktop : [1199,1],
-      itemsDesktopSmall : [979,1],
-      itemsTablet : [768, 1]
-  });
-
+$(document).ready(function(){
+  $("#owl-1").owlCarousel();
+  $("#owl-2").owlCarousel();
+  $("#owl-3").owlCarousel();
 });
 
-$(document).ready(function() {
+$('#owl-1').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        450:{
+            items:1,
+            nav:true
+        },
+        768:{
+            items:2,
+            nav:false
+        },
+        1000:{
+            items:3,
+            nav:false
+        }
+    }
+})
 
-  $("#owl-2").owlCarousel({
+$('#owl-2').owlCarousel({
+  loop:true,
+  margin:10,
+  responsiveClass:true,
+  responsive:{
+      450:{
+          items:1,
+          nav:true
+      },
+      768:{
+          items:2,
+          nav:false
+      },
+      1000:{
+          items:3,
+          nav:false
+      }
+  }
+})
 
-      autoPlay: 15000, //Set AutoPlay to 3 seconds
-
-      items : 1,
-      itemsDesktop : [1199,1],
-      itemsDesktopSmall : [979,1],
-      itemsTablet : [768, 1]
-  });
-
-});
-
-$(document).ready(function() {
-
-  $("#owl-3").owlCarousel({
-
-      autoPlay: 15000, //Set AutoPlay to 3 seconds
-
-      items : 3,
-      itemsDesktop : [1199,3],
-      itemsDesktopSmall : [979,2],
-      itemsTablet : [768, 2],
-      itemsMobile : [479, 1]
-  });
-
-});
-
-$(document).ready(function() {
-
-  $("#owl-4").owlCarousel({
-
-      autoPlay: 15000, //Set AutoPlay to 3 seconds
-
-      items : 3,
-      itemsDesktop : [1199,3],
-      itemsDesktopSmall : [979,2],
-      itemsTablet : [768, 2],
-      itemsMobile : [479, 1]
-  });
-
-});
-
-$(document).ready(function() {
-
-  $("#owl-5").owlCarousel({
-
-      autoPlay: 15000, //Set AutoPlay to 3 seconds
-
-      items : 3,
-      itemsDesktop : [1199,3],
-      itemsDesktopSmall : [979,2],
-      itemsTablet : [768, 2],
-      itemsMobile : [479, 1]
-  });
-
-});
+$('#owl-3').owlCarousel({
+  loop:true,
+  margin:10,
+  responsiveClass:true,
+  responsive:{
+      450:{
+          items:1,
+          nav:true
+      },
+      768:{
+          items:3,
+          nav:false
+      },
+      1000:{
+          items:4,
+          nav:false
+      }
+  }
+})

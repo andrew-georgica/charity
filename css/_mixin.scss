@@ -18,4 +18,55 @@
     clip-path: $clip_polygon;
 }
 
+@mixin linear-gradient($from, $to) {
+    background: $to;
+      background: -moz-linear-gradient(left, $from 0%, $to 100%);
+      background: -webkit-linear-gradient(left, $from 0%,$to 100%);
+      background: -o-linear-gradient(left, $from 0%,$to 100%);
+      background: linear-gradient(to left, $from 0%,$to 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#{$from}, endColorstr=#{$to})      
+}
+
+@mixin border-gradient($from, $to, $width) {
+    border-top: $width solid $from;
+    border-bottom: $width solid $to;
+
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from($from), to($to));
+    background-image: -webkit-linear-gradient($from, $to);
+
+    background-image:
+    -moz-linear-gradient($from, $to),
+    -moz-linear-gradient($from, $to);
+
+    background-image:
+    -o-linear-gradient($from, $to),
+    -o-linear-gradient($from, $to);
+
+    background-image: 
+    linear-gradient($from, $to),
+    linear-gradient($from, $to);
+
+    -moz-background-size: $width 100%;
+
+    background-size: $width 100%;
+
+    background-position: 0 0, 100% 0;
+    background-repeat: no-repeat; 
+}
+
+
+// Work only for gradient from left to right
+
+// @mixin border-gradient($dir, $from, $to, $width) {
+//     border-left: $width solid $from;
+//     border-right: $width solid $to;
+//     background-image:
+//       // Needed for both the top and bottom borders
+//       -webkit-linear-gradient($dir, $from, $to),
+//       -webkit-linear-gradient($dir, $from, $to);
+//     background-size: 100% $width;
+//     background-position: 0 100%, 0 0;
+//     background-repeat: no-repeat;
+//     background-clip: border-box;
+// }
 

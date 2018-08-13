@@ -4,6 +4,335 @@
 
 // Main styles 
 
-h1 {
-    color: pink;
+html, body {
+    height: 100%;
+    // line-height: 1.2;
 }
+
+// #page-wrapper {
+    
+// }
+
+h2 {
+    color: $content_color;
+    font-family: $title_font;
+    font-size: 5em;
+    text-align: left;
+    margin-bottom: 100px;
+}
+
+h3 {
+    color: $content_color;
+    font-family: $title_font;
+    font-size: 2.5em;
+    text-align: left;
+}
+
+h4 {
+    color: $content_color;
+    font-family: $content_font;
+    font-size: 1.3em;
+    font-weight: 600;
+    text-align: right;
+    margin-right: 30px;
+}
+
+p {
+    font-family: $content_font;
+    font-size: 1.5em;
+}
+
+a.bd_btn {
+    display: block;
+    color: $content_color;
+    font-family: $title_font;
+    font-size: 1.7em;
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+    border: 6px solid #ff6c60;
+    border-radius: 70px;
+    padding: 10px;
+    line-height: 35px;
+}
+
+a.carousel_btn {
+    @include linear-gradient($page_main_color, $page_second_color);
+    box-shadow: $box-shadow;
+    border-radius: 50px;
+    font-family: $title_font;
+    font-size: 2em;
+    text-align: center;
+    text-decoration: none;
+    color: $content_color;
+    position: absolute;
+    padding: 10px 10px;
+    bottom: -30px;
+    left: 50%;
+    margin-left: -190px;
+    width: 380px;
+}
+
+// ----------------------
+
+
+
+// Menu section
+
+#menu_section {
+    @include linear-gradient($page_main_color, $page_second_color);
+    height: 90px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+
+    h2 {
+        font-family: $title_font;
+        font-size: 3.5em;
+        color: $menu_font_color;
+        margin-left: 20px;
+        margin-top: 12px;
+        float: left;
+    }
+
+    ul {
+        list-style-type: none;
+        float: right;
+        padding-top: 25px;
+    
+        li {
+            float: left;
+            margin-right: 30px;
+    
+            a {
+                color: $menu_font_color;
+                font-family: $content_font;
+                font-size: 1.7em;
+                text-decoration: none;
+            }
+        }
+    }
+     
+}
+
+
+// ----------------------
+
+
+// Header section
+
+#header_section {
+    width: 100%;
+    height: 100%;
+}
+
+.header_content_wrapper {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    padding-top: 150px;
+
+    .img_border {
+        @include border-gradient($page_second_color, $page_main_color, $width);
+        width: 560px;
+        height: 750px;
+        position: absolute;
+        top: -30px;
+        left: 50px;
+    }
+
+    header {
+        width: 550px;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+
+    h2 {
+        color: $page_main_color;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1.8em;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .btn_container {
+        text-align: center;
+        margin-top: 50px;
+
+        a {
+            display: inline-block;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+    }
+}
+
+// ----------------------
+
+
+// Carousel secction
+
+#carousel_section {
+    margin-top: 70px;
+    margin-bottom: 100px;
+    position: relative;
+
+    #carousel_nav {
+        width: 500px;
+        border: 6px solid #ff5051;
+        border-radius: 50px;
+        text-align: center;
+        padding: 10px;
+        margin: 0 auto;
+        margin-top: 20px;
+
+        .nav-tabs {
+            border-bottom: none;
+        }
+
+        .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+            background-color: #ff5051;
+            color: #464a4c;
+            border-color: #ff5051; 
+        }
+
+        .nav-tabs .nav-link {
+            border: 2px solid #ff5051;
+        }
+
+        .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+            border-color: #ff5051;
+        }
+
+        a {
+            background-color: transparent;
+            border-radius: 50px;
+            color: #000;
+            font-family: $title_font;
+            font-size: 2em;
+            width: 50px;
+            height: 50px;
+            padding: 2px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        a.first_point::after {
+            content: "Соціальні";
+            position: absolute;
+            top: 90px;
+            left: 50%;
+            margin-left: -80px;
+            width: 170px;
+        }
+
+        a.second_point::after {
+            content: "Медичні";
+            position: absolute;
+            top: 90px;
+            left: 50%;
+            margin-left: -73px;
+            width: 146px;
+
+        }
+    }
+
+    .arrows_block {
+        max-width: 1400px;
+        padding: 20px;
+        margin: 50px auto;
+        position: relative;
+
+        a {
+            border: 10px solid $page_second_color;
+            color: $content_color;
+            display: block;
+            font-family: $title_font;
+            font-size: 3em;
+            text-align: center;
+            text-decoration: none;
+            width: 430px;
+            padding: 5px;
+            margin: 0 auto;
+        }
+
+        .img_left {
+            position: absolute;
+            left: 0;
+        }
+
+        .img_right {
+            position: absolute;
+            right: 0;
+        }
+    }
+}
+
+// ----------------------
+
+
+// Insert section
+
+#insert {
+    margin-bottom: 100px;
+
+    h2 {
+        margin-bottom: 50px;
+    }
+
+    p {
+        font-size: 1.8em;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    
+    img {  
+        position: relative;
+        margin: 0 auto;
+        margin-top: 70px; 
+        display: block;
+    }
+
+    .carousel_btn {
+        width: 500px;
+        margin-left: 150px;
+        font-size: 3em;
+        bottom: 370px;
+    }
+}
+
+// ----------------------
+
+
+// Blog section
+
+#blog_section {
+    margin-bottom: 100px;
+
+    .blog_article {
+        box-shadow: $box-shadow;
+        padding-bottom: 100px;
+        max-width: 590px;
+        margin: 0 auto;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+// ----------------------
+
+
+// Partners section
+
+#partners_section {
+    margin-top: 200px;
+}
+
+// ----------------------
