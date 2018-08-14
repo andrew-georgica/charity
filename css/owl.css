@@ -34,6 +34,7 @@
 
 #owl-3 .item {
     box-shadow: none;
+    padding-bottom: 50px;
 }
 
 #owl-3.owl-carousel .owl-item img {
