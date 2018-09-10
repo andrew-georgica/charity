@@ -9,9 +9,14 @@ html, body {
     // line-height: 1.2;
 }
 
-// #page-wrapper {
-    
-// }
+#page-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.margin-wrapper {
+    margin: 0 90px;
+}
 
 h2 {
     color: $content_color;
@@ -26,6 +31,7 @@ h3 {
     font-family: $title_font;
     font-size: 2.5em;
     text-align: left;
+    margin-bottom: 70px;
 }
 
 h4 {
@@ -76,6 +82,60 @@ a.carousel_btn {
 // ----------------------
 
 
+// Parallax images
+
+#parallax_img1 {
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+
+#parallax_img2 {
+    position: absolute;
+    right: 0;
+    top: 2700px;
+}
+
+#parallax_img3 {
+    position: absolute;
+    right: 0;
+    top: 5000px;
+}
+
+#parallax_img4 {
+    position: absolute;
+    right: -500px;
+    bottom: -230px;
+}
+
+#parallax_img5 {
+    position: absolute;
+    top: 200px;
+    right: -900px;
+    z-index: 101;
+}
+
+#parallax_img6 {
+    position: absolute;
+    top: 800px;
+    left: -1000px;
+    z-index: 101;
+}
+
+#parallax_img7 {
+    position: absolute;
+    right: -600px;
+    top: 1200px;
+}
+
+#parallax_img8 {
+    position: absolute;
+    right: -200px;
+    top: 1200px;
+}
+
+// -----------------------
+
 
 // Menu section
 
@@ -84,7 +144,7 @@ a.carousel_btn {
     height: 90px;
     position: fixed;
     width: 100%;
-    z-index: 100;
+    z-index: 102;
 
     h2 {
         font-family: $title_font;
@@ -124,6 +184,8 @@ a.carousel_btn {
 #header_section {
     width: 100%;
     height: 100%;
+    
+    position: relative;
 }
 
 .header_content_wrapper {
@@ -162,6 +224,11 @@ a.carousel_btn {
     }
 }
 
+.img_effect {
+    display: block;
+    @include transition(ease-in-out,.5s);
+}
+
 .img_border {
     @include border-gradient($page_second_color, $page_main_color, $width);
     width: 560px;
@@ -169,6 +236,19 @@ a.carousel_btn {
     position: absolute;
     top: -30px;
     left: 50px;
+    @include transition(ease-in-out,.5s);
+    
+    &:hover {
+        left: 10px;
+        top: 30px;
+    }
+
+    
+}
+
+.img_border:hover + .img_effect {
+    margin-left: 30px;
+    margin-top: -30px;
 }
 
 // ----------------------
@@ -261,34 +341,36 @@ a.carousel_btn {
         }
     }
 
-    .circle-chart__circle {
-        animation: circle-chart-fill 2s reverse; /* 1 */ 
-        transform: rotate(-90deg); /* 2, 3 */
-        transform-origin: center; /* 4 */
-      }
-      
-      .circle-chart__circle--negative {
-        transform: rotate(-90deg) scale(1,-1); /* 1, 2, 3 */
-      }
-      
-      .circle-chart__info {
-        animation: circle-chart-appear 2s forwards;
-        opacity: 0;
-        transform: translateY(.5em);
-      }
-      
-      @keyframes circle-chart-fill {
-        to { stroke-dasharray: 0 100; }
-      }
-      
-      @keyframes circle-chart-appear {
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
 }
 // ----------------------
+
+
+.circle-chart__circle {
+    animation: circle-chart-fill 2s reverse; /* 1 */ 
+    transform: rotate(-90deg); /* 2, 3 */
+    transform-origin: center; /* 4 */
+  }
+  
+  .circle-chart__circle--negative {
+    transform: rotate(-90deg) scale(1,-1); /* 1, 2, 3 */
+  }
+  
+  .circle-chart__info {
+    animation: circle-chart-appear 2s forwards;
+    opacity: 0;
+    transform: translateY(.5em);
+  }
+  
+  @keyframes circle-chart-fill {
+    to { stroke-dasharray: 0 100; }
+  }
+  
+  @keyframes circle-chart-appear {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
 
 // Carousel secction
@@ -356,6 +438,7 @@ a.carousel_btn {
             width: 146px;
 
         }
+
     }
 
     .arrows_block {
@@ -461,6 +544,7 @@ a.carousel_btn {
 #about_us_section {
     margin-top: 150px;
     margin-bottom: 150px;
+    height: 750px;
 
     h2 {
         margin-bottom: 50px;
@@ -483,6 +567,270 @@ a.carousel_btn {
         display: block;
         width: 465px;
         margin: 70px auto;
+    }
+
+}
+
+// ----------------------
+
+
+// About Us Page
+
+#about_us_page {
+    margin: 100px 90px;
+
+    .about-us_founder {
+        height: 750px;
+        padding-top: 50px;
+    }
+
+    h2 {
+        margin-bottom: 50px;
+    }
+
+    p {
+        padding-right: 50px;  
+        font-size: 1.8em;  
+    }
+
+    article {
+        margin-top: 50px;
+    }
+
+    h4 {
+        text-align: center;
+        font-weight: bold;
+
+        span {
+            color: $page_second_color;
+        }
+    }
+
+    .bd_btn {
+        display: block;
+        width: 465px;
+        margin: 70px auto;
+    }
+
+    .about-us_team {
+        height: 600px;
+        margin-top: 150px;
+        margin-bottom: 50px;
+
+        .img_border {
+            width: 909px;
+            height: 560px;
+        }
+    }
+
+    .about-us_projects {
+
+        h3 {
+            text-align: center;
+        }
+        
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        p {
+            margin-top: 50px;
+        }
+    }
+
+}
+
+// ----------------------
+
+
+// Project page
+
+#project_section {
+    margin: 150px 50px;
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    h3 {
+        margin-bottom: 50px;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 2em;
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    ul {
+        list-style: none;
+
+        li {
+            font-family: $content_font;
+            font-size: 2em;
+            
+
+            &::before {
+                content: "• ";
+                color: $page_second_color;
+            }
+        }
+    }
+
+    .carousel_btn {
+        display: block;
+        position: relative;
+        padding: 10px 20px;
+        left: auto;
+        margin: 0 auto;
+        width: 550px;
+    }
+
+    .documents {
+        margin-bottom: 100px;
+    }
+
+    .project_circle_wrapper {
+        text-align: center;
+    }
+
+}
+
+// ----------------------
+
+
+// All projects
+
+.all_projects {
+    margin: 150px 100px;
+    
+    #carousel_section {
+    
+        #carousel_nav {
+            a {
+                background-color: transparent;
+                border-radius: 50px;
+                color: #000;
+                font-family: $title_font;
+                font-size: 1.3em;
+                width: 50px;
+                height: 50px;
+                padding: 2px;
+                margin: 0 auto;
+                position: relative;
+            }
+    
+            a.first_point::after {
+                content: "Всі проекти";
+                position: absolute;
+                top: 90px;
+                left: 50%;
+                margin-left: -80px;
+                width: 170px;
+            }
+    
+            a.second_point::after {
+                content: "Соціальні";
+                position: absolute;
+                top: 90px;
+                left: 50%;
+                margin-left: -73px;
+                width: 146px;
+    
+            }
+
+            a.third_point::after {
+                content: "Медичні";
+                position: absolute;
+                top: 90px;
+                left: 50%;
+                margin-left: -73px;
+                width: 146px;
+    
+            }
+    
+        }
+
+        .tab-content {
+            margin-top: 50px;
+
+            .col-lg-4 {
+                margin-bottom: 150px;
+            }
+        }
+
+    }
+}
+
+// ----------------------
+
+
+// Partners section
+
+#partners_section {
+    margin: 150px 100px;
+
+    header {
+        text-align: center;
+        margin-top: 100px;
+
+        h2 {
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 2em;
+            margin-bottom: 100px;
+        }
+
+    }
+
+    img {
+        display: block;
+    }
+
+    h3 {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    p {
+        text-align: center;
+    }
+
+}
+
+// ----------------------
+
+
+// Contacts page
+
+#contact_page_content {
+    margin: 150px 100px;
+
+    article {
+        margin-bottom: 50px;
+    }
+
+    h2 {
+        margin-bottom: 50px;
+    }
+
+    h3 {
+        font-weight: 700;
+        margin-bottom: 50px;
+    }
+
+    p {
+        font-size: 2.2em;
     }
 }
 
@@ -512,7 +860,7 @@ a.carousel_btn {
             display: inline-block;
             
             font-size: 6em;
-            margin-left: 20px;
+            // margin-left: 20px;
             margin-right: 30px;
             text-align: center;
             text-decoration: none;

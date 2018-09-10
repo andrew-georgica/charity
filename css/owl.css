@@ -46,3 +46,18 @@
 #owl-3.owl-carousel .owl-stage-outer {
     padding-bottom: 0;
 }
+
+#owl-4 .item {
+    box-shadow: none;
+    padding-bottom: 50px;
+}
+
+#owl-4.owl-carousel .owl-item img {
+    display: block;
+    width: auto;
+    margin: 0 auto;
+}
+
+#owl-4.owl-carousel .owl-stage-outer {
+    padding-bottom: 0;
+}

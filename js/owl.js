@@ -3,6 +3,7 @@ $(document).ready(function(){
   $("#owl-1").owlCarousel();
   $("#owl-2").owlCarousel();
   $("#owl-3").owlCarousel();
+  $("#owl-4").owlCarousel();
 });
 
 $('#owl-1').owlCarousel({
@@ -64,3 +65,24 @@ $('#owl-3').owlCarousel({
       }
   }
 })
+
+$('#owl-4').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        450:{
+            items:1,
+            nav:true
+        },
+        768:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:3,
+            nav:false
+        }
+    }
+  })
+
