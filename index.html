@@ -12,6 +12,10 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 
+    <!-- Menu -->
+    <link rel='stylesheet prefetch' href='http://daneden.github.io/animate.css/animate.min.css'>
+    <link rel="stylesheet" href="css/menu.css">
+
     <!-- Owl Carousel -->
     <link href="css/owl.carousel.css" rel="stylesheet">
     <link href="css/owl.theme.default.css" rel="stylesheet">
@@ -40,38 +44,84 @@
       <h2>
         razom.in.ua
       </h2>
-      <ul>
+
+      <ul id="big_screen_menu">
         <li>
-            <a href="#">
-              Про проект
-            </a>
+          <a href="all_projects_page.html">
+            Допомогти
+          </a>
         </li>
         <li>
-            <a href="#">
-              Потрібна допомога 
-            </a>
+          <a href="about_us.html" id="link_6">
+            Про проект
+          </a>
         </li>
         <li>
-            <a href="#">
-              Допомогти 
-            </a>
+          <a href="#insert" id="link_5">
+            Потрібна допомога
+          </a>
         </li>
         <li>
-            <a href="#">
-              Блог та звіти 
-            </a>
+          <a href="blog.html" id="link_6">
+            Блог та звіти
+          </a>
         </li>
         <li>
-            <a href="#">
-              Меценати 
-            </a>
+          <a href="partners.html" id="link_7">
+            Меценати
+          </a>
         </li>
         <li>
-            <a href="#">
-              Контакти   
-            </a>
-        </li>
+          <a href="contacts.html" id="link_8">
+            Контакти
+          </a>
+        </li> 
       </ul>
+
+      <div class="button_container" id="toggle">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+      </div>
+
+      <div class="overlay" id="overlay">
+
+        <nav class="overlay-menu">
+          <ul>
+            <li>
+              <a href="all_projects_page.html">
+                Допомогти
+              </a>
+            </li>
+            <li>
+              <a href="about_us.html" id="link_6">
+                Про проект
+              </a>
+            </li>
+            <li>
+              <a href="#insert" id="link_5">
+                Потрібна допомога
+              </a>
+            </li>
+            <li>
+              <a href="blog.html" id="link_6">
+                Блог та звіти
+              </a>
+            </li>
+            <li>
+              <a href="partners.html" id="link_7">
+                Меценати
+              </a>
+            </li>
+            <li>
+              <a href="contacts.html" id="link_8">
+                Контакти
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
     </nav>
 
     <div id="header_section">
@@ -130,9 +180,11 @@
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt. 
+              ea commodo consequat.  
             </p>
+            <a href="project_page.html" class="carousel_btn">
+              Про проект
+            </a>
           </article>
         </div>
         <div class="left_side">
@@ -155,7 +207,7 @@
           </h3>
 
           <a href="" class="carousel_btn">
-            Про проект
+            Допомогти
           </a>
         </div>
       </section>
@@ -452,7 +504,7 @@
   
           <div class="insert_img">
             <img src="img/insert/1.png" alt="" class="img-fluid">
-            <a href="" class="carousel_btn">
+            <a href="" data-toggle="modal" data-target="#modal1" class="carousel_btn">
                 Подати проект
             </a>
           </div>
@@ -608,11 +660,14 @@
           </h2>
   
           <p>
-            Номери телефонів: 099 99 99 999
+            Номери телефонів: <a href="tel:050 000 00 00" > 050 000 00 00</a>
           </p>
-  
+    
           <p>
-            Пошта: Hello@bucovina
+            Пошта: 
+            <a href="mailto:Hello@bucovina" onmouseover="this.href=this.href.replace(/x/g,'');">
+              Hello@bucovina
+            </a>
           </p>
   
           <div class="icons_block">
@@ -686,9 +741,6 @@
       
     </section>
 
-
-
-    
     <section id="modals-section">
 
       <div class="modal fade" id="modal1">
@@ -706,16 +758,16 @@
 
                 </h4>
 
-                <input type="text" placeholder="ФИО*" name="name" pattern=".{5,}" title="Введите минимум 5 символов"  required>
-                <input type="text" name="tel" placeholder="Телефон*" pattern="\d*" title="Phone number should contain only digits." required >
-                <input type="text" name="email" placeholder="Email*" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Enter correct email" required >
-                <input type="text" placeholder="Город" name="city" pattern=".{2,}" title="Введите минимум 2 символов"  required>
+                <input type="text" placeholder="ПІП*" name="name" pattern=".{5,}" title="Введіть мінімум 3 символи"  required>
+                <input type="text" name="tel" placeholder="Телефон*" pattern="\d*" title="Номер повинен містити тільки цифри" required >
+                <input type="text" name="email" placeholder="Email*" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Введіть коректний email" required >
+                <input type="text" placeholder="Місто" name="city" pattern=".{2,}" title="Введіть мінімум 2 символа"  required>
 
                 <h4>
 
                 </h4>
 
-                <textarea cols="50" id="title" name="title" placeholder="Комментарий" rows="4"></textarea>
+                <textarea cols="50" id="title" name="title" placeholder="Коментар" rows="4"></textarea>
                 <input type="submit" value="Отправить">
               </form>
 
@@ -738,6 +790,11 @@
 
      <!-- Parallax -->
      <script src="js/parallax.js"></script>
+
+     <!-- Menu -->
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js'></script>
+    <script src="js/menu.js"></script>
+
 
   </body>
 </html>

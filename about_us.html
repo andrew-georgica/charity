@@ -34,41 +34,87 @@
 
     <nav id="menu_section">
 
-      <h2>
-        razom.in.ua
-      </h2>
-      <ul>
-        <li>
-            <a href="#">
-              Про проект
+        <h2>
+            razom.in.ua
+        </h2>
+    
+        <ul id="big_screen_menu">
+          <li>
+            <a href="all_projects_page.html">
+                Допомогти
             </a>
-        </li>
-        <li>
-            <a href="#">
-              Потрібна допомога 
+          </li>
+          <li>
+            <a href="about_us.html" id="link_6">
+                Про проект
             </a>
-        </li>
-        <li>
-            <a href="#">
-              Допомогти 
+          </li>
+          <li>
+            <a href="#insert" id="link_5">
+                Потрібна допомога
             </a>
-        </li>
-        <li>
-            <a href="#">
-              Блог та звіти 
+          </li>
+          <li>
+            <a href="blog.html" id="link_6">
+                Блог та звіти
             </a>
-        </li>
-        <li>
-            <a href="#">
-              Меценати 
+          </li>
+          <li>
+            <a href="partners.html" id="link_7">
+                Меценати
             </a>
-        </li>
-        <li>
-            <a href="#">
-              Контакти   
+          </li>
+          <li>
+            <a href="contacts.html" id="link_8">
+                Контакти
             </a>
-        </li>
+          </li> 
       </ul>
+    
+        <div class="button_container" id="toggle">
+          <span class="top"></span>
+          <span class="middle"></span>
+          <span class="bottom"></span>
+        </div>
+    
+        <div class="overlay" id="overlay">
+    
+          <nav class="overlay-menu">
+            <ul>
+              <li>
+                <a href="all_projects_page.html">
+                    Допомогти
+                </a>
+              </li>
+              <li>
+                <a href="about_us.html" id="link_6">
+                    Про проект
+                </a>
+              </li>
+              <li>
+                <a href="#insert" id="link_5">
+                    Потрібна допомога
+                </a>
+              </li>
+              <li>
+                <a href="blog.html" id="link_6">
+                    Блог та звіти
+                </a>
+              </li>
+              <li>
+                <a href="partners.html" id="link_7">
+                    Меценати
+                </a>
+              </li>
+              <li>
+                <a href="contacts.html" id="link_8">
+                    Контакти
+                </a>
+              </li>
+            </ul>
+          </nav>
+    
+        </div>
     </nav>
 
     <section id="page-wrapper">
@@ -168,11 +214,14 @@
         </h2>
 
         <p>
-          Номери телефонів: 099 99 99 999
+          Номери телефонів: <a href="tel:050 000 00 00" > 050 000 00 00</a>
         </p>
-
+    
         <p>
-          Пошта: Hello@bucovina
+          Пошта: 
+          <a href="mailto:Hello@bucovina" onmouseover="this.href=this.href.replace(/x/g,'');">
+            Hello@bucovina
+          </a>
         </p>
 
         <div class="icons_block">

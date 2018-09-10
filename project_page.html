@@ -34,41 +34,87 @@
 
     <nav id="menu_section">
 
-      <h2>
-        razom.in.ua
-      </h2>
-      <ul>
-        <li>
-            <a href="#">
-              Про проект
+        <h2>
+            razom.in.ua
+        </h2>
+    
+        <ul id="big_screen_menu">
+          <li>
+            <a href="all_projects_page.html">
+                Допомогти
             </a>
-        </li>
-        <li>
-            <a href="#">
-              Потрібна допомога 
+          </li>
+          <li>
+            <a href="about_us.html" id="link_6">
+                Про проект
             </a>
-        </li>
-        <li>
-            <a href="#">
-              Допомогти 
+          </li>
+          <li>
+            <a href="#insert" id="link_5">
+                Потрібна допомога
             </a>
-        </li>
-        <li>
-            <a href="#">
-              Блог та звіти 
+          </li>
+          <li>
+            <a href="blog.html" id="link_6">
+                Блог та звіти
             </a>
-        </li>
-        <li>
-            <a href="#">
-              Меценати 
+          </li>
+          <li>
+            <a href="partners.html" id="link_7">
+                Меценати
             </a>
-        </li>
-        <li>
-            <a href="#">
-              Контакти   
+          </li>
+          <li>
+            <a href="contacts.html" id="link_8">
+                Контакти
             </a>
-        </li>
+          </li> 
       </ul>
+    
+      <div class="button_container" id="toggle">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+      </div>
+  
+      <div class="overlay" id="overlay">
+  
+        <nav class="overlay-menu">
+          <ul>
+            <li>
+              <a href="all_projects_page.html">
+                  Допомогти
+              </a>
+            </li>
+            <li>
+              <a href="about_us.html" id="link_6">
+                  Про проект
+              </a>
+            </li>
+            <li>
+              <a href="#insert" id="link_5">
+                  Потрібна допомога
+              </a>
+            </li>
+            <li>
+              <a href="blog.html" id="link_6">
+                  Блог та звіти
+              </a>
+            </li>
+            <li>
+              <a href="partners.html" id="link_7">
+                  Меценати
+              </a>
+            </li>
+            <li>
+              <a href="contacts.html" id="link_8">
+                  Контакти
+              </a>
+            </li>
+          </ul>
+        </nav>
+  
+      </div>
     </nav>
 
     <section id="page-wrapper">
@@ -79,7 +125,7 @@
 
         <header>
             <h2>
-                Усі проекти
+                Заголовок
             </h2>
     
             <img src="img/project_page/1.jpg" alt="" class="img-fluid">
@@ -120,30 +166,32 @@
             
             <div class="col-lg-6">
 
-                <p>
-                    Потрібно зібрати: 500 000 грн
-                </p>
-
-                <p>
-                    Зібрано: 250 000 грн
-                </p>
-
-                <p>
-                    Кошти надходять на рахунок: 
-                </p>
-
-                <p>
-                    <span>Як ще можна допомогти?</span>
-                </p>
-
-                <ul>
-                    <li>
-                        Перевезення матеріалів
-                    </li>
-                    <li>Будівельні матеріали</li>
-                    <li>Будівельні роботи</li>
-                    <li>Інформаційна підтримка</li>
-                </ul>
+                <article class="list_wrapper">
+                  <p>
+                      Потрібно зібрати: 500 000 грн
+                  </p>
+  
+                  <p>
+                      Зібрано: 250 000 грн
+                  </p>
+  
+                  <p>
+                      Кошти надходять на рахунок: 
+                  </p>
+  
+                  <p>
+                      <span>Як ще можна допомогти?</span>
+                  </p>
+  
+                  <ul>
+                      <li>
+                          Перевезення матеріалів
+                      </li>
+                      <li>Будівельні матеріали</li>
+                      <li>Будівельні роботи</li>
+                      <li>Інформаційна підтримка</li>
+                  </ul>
+                </article>
 
             </div>
 
@@ -160,9 +208,18 @@
             </div>
         </div>
 
-        <a href="" class="carousel_btn">
-            Допомогти
-        </a>
+        <div id="btn_wrapper" class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6">
+              <a href="" data-toggle="modal" data-target="#modal1" class="carousel_btn">
+                  Допомогти
+              </a>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6">
+              <a href="" class="carousel_btn">
+                  Перечислити гроші
+              </a>
+          </div>
+        </div>
          
       </section>
      
@@ -173,11 +230,14 @@
         </h2>
 
         <p>
-          Номери телефонів: 099 99 99 999
+          Номери телефонів: <a href="tel:050 000 00 00" > 050 000 00 00</a>
         </p>
-
+      
         <p>
-          Пошта: Hello@bucovina
+          Пошта: 
+          <a href="mailto:Hello@bucovina" onmouseover="this.href=this.href.replace(/x/g,'');">
+            Hello@bucovina
+          </a>
         </p>
 
         <div class="icons_block">
@@ -250,9 +310,6 @@
       
     </section>
 
-
-
-    
     <section id="modals-section">
 
       <div class="modal fade" id="modal1">
@@ -270,16 +327,16 @@
 
                 </h4>
 
-                <input type="text" placeholder="ФИО*" name="name" pattern=".{5,}" title="Введите минимум 5 символов"  required>
-                <input type="text" name="tel" placeholder="Телефон*" pattern="\d*" title="Phone number should contain only digits." required >
-                <input type="text" name="email" placeholder="Email*" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Enter correct email" required >
-                <input type="text" placeholder="Город" name="city" pattern=".{2,}" title="Введите минимум 2 символов"  required>
+                <input type="text" placeholder="ПІП*" name="name" pattern=".{5,}" title="Введіть мінімум 3 символи"  required>
+                <input type="text" name="tel" placeholder="Телефон*" pattern="\d*" title="Номер повинен містити тільки цифри" required >
+                <input type="text" name="email" placeholder="Email*" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Введіть коректний email" required >
+                <input type="text" placeholder="Місто" name="city" pattern=".{2,}" title="Введіть мінімум 2 символа"  required>
 
                 <h4>
 
                 </h4>
 
-                <textarea cols="50" id="title" name="title" placeholder="Комментарий" rows="4"></textarea>
+                <textarea cols="50" id="title" name="title" placeholder="Коментар" rows="4"></textarea>
                 <input type="submit" value="Отправить">
               </form>
 

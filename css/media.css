@@ -1,0 +1,17 @@
+
+@media screen and (max-width: 1845px) {
+
+    #big_screen_menu {
+        display: none;  
+    }
+
+    #menu_section #toggle {
+        display: block;
+    }
+
+    #menu_section #overlay {
+        display: block;
+    }
+
+}
+

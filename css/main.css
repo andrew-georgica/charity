@@ -169,6 +169,14 @@ a.carousel_btn {
   text-decoration: none;
 }
 
+#menu_section #toggle {
+  display: none;
+}
+
+#menu_section #overlay {
+  display: none;
+}
+
 #header_section {
   width: 100%;
   height: 100%;
@@ -290,6 +298,10 @@ a.carousel_btn {
 #aim_section .right_side article p {
   font-size: 1.3em;
   margin-right: 150px;
+}
+
+#aim_section .right_side article .carousel_btn {
+  bottom: 70px;
 }
 
 #aim_section .left_side {
@@ -629,26 +641,35 @@ a.carousel_btn {
   text-align: center;
 }
 
-#project_section p {
+#project_section article.list_wrapper {
+  width: 500px;
+  margin: 0 auto;
+}
+
+#project_section article.list_wrapper p {
   font-size: 2em;
 }
 
-#project_section p span {
+#project_section article.list_wrapper p span {
   font-weight: bold;
 }
 
-#project_section ul {
+#project_section article.list_wrapper ul {
   list-style: none;
 }
 
-#project_section ul li {
+#project_section article.list_wrapper ul li {
   font-family: "Open Sans", sans-serif;
   font-size: 2em;
 }
 
-#project_section ul li::before {
+#project_section article.list_wrapper ul li::before {
   content: "• ";
   color: #ffd194;
+}
+
+#project_section #btn_wrapper {
+  margin-top: 100px;
 }
 
 #project_section .carousel_btn {

@@ -172,6 +172,14 @@ a.carousel_btn {
             }
         }
     }
+
+    #toggle {
+        display: none;
+    }
+
+    #overlay {
+        display: none;
+    }
      
 }
 
@@ -301,6 +309,10 @@ a.carousel_btn {
             p {
                 font-size: 1.3em;
                 margin-right: 150px;
+            }
+
+            .carousel_btn {
+                bottom: 70px;
             }
 
         }
@@ -660,27 +672,36 @@ a.carousel_btn {
         text-align: center;
     }
 
-    p {
-        font-size: 2em;
+    article.list_wrapper {
+        width: 500px;
+        margin: 0 auto;
 
-        span {
-            font-weight: bold;
+        p {
+            font-size: 2em;
+    
+            span {
+                font-weight: bold;
+            }
+        }
+    
+        ul {
+            list-style: none;
+    
+            li {
+                font-family: $content_font;
+                font-size: 2em;
+                
+    
+                &::before {
+                    content: "• ";
+                    color: $page_second_color;
+                }
+            }
         }
     }
 
-    ul {
-        list-style: none;
-
-        li {
-            font-family: $content_font;
-            font-size: 2em;
-            
-
-            &::before {
-                content: "• ";
-                color: $page_second_color;
-            }
-        }
+    #btn_wrapper {
+        margin-top: 100px;
     }
 
     .carousel_btn {
