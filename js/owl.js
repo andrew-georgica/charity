@@ -11,15 +11,31 @@ $('#owl-1').owlCarousel({
     margin:10,
     responsiveClass:true,
     responsive:{
+        250:{
+            items:1,
+            nav:false
+        },
         450:{
             items:1,
-            nav:true
+            nav:false
+        },
+        576:{
+            items:2,
+            nav:false
         },
         768:{
             items:2,
             nav:false
         },
         1000:{
+            items:2,
+            nav:false
+        },
+        1300:{
+            items:2,
+            nav:false
+        },
+        1310:{
             items:3,
             nav:false
         }
@@ -31,18 +47,34 @@ $('#owl-2').owlCarousel({
   margin:10,
   responsiveClass:true,
   responsive:{
-      450:{
-          items:1,
-          nav:true
-      },
-      768:{
-          items:2,
-          nav:false
-      },
-      1000:{
-          items:3,
-          nav:false
-      }
+    250:{
+        items:1,
+        nav:false
+    },
+    450:{
+        items:1,
+        nav:false
+    },
+    576:{
+        items:2,
+        nav:false
+    },
+    768:{
+        items:2,
+        nav:false
+    },
+    1000:{
+        items:2,
+        nav:false
+    },
+    1300:{
+        items:2,
+        nav:false
+    },
+    1310:{
+        items:3,
+        nav:false
+    }
   }
 })
 
@@ -51,18 +83,30 @@ $('#owl-3').owlCarousel({
   margin:10,
   responsiveClass:true,
   responsive:{
-      450:{
-          items:1,
-          nav:true
-      },
+    250:{
+        items:1,
+        nav:false
+    },
+    450:{
+        items:1,
+        nav:false
+    },
+    576:{
+        items:2,
+        nav:false
+    },
       768:{
           items:3,
           nav:false
       },
       1000:{
-          items:4,
+          items:3,
           nav:false
-      }
+      },
+      1400:{
+        items:3,
+        nav:false
+    }
   }
 })
 
@@ -71,9 +115,13 @@ $('#owl-4').owlCarousel({
     margin:10,
     responsiveClass:true,
     responsive:{
+        250:{
+            items:1,
+            nav:false
+        },
         450:{
             items:1,
-            nav:true
+            nav:false
         },
         768:{
             items:3,

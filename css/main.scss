@@ -194,6 +194,15 @@ a.carousel_btn {
     height: 100%;
     
     position: relative;
+
+
+    .header_content_wrapper_small_screen {
+        display: none;
+        position: absolute;
+        width: 100%;
+        min-height: 100%;
+        padding-top: 150px;
+    }
 }
 
 .header_content_wrapper {
@@ -203,7 +212,7 @@ a.carousel_btn {
     padding-top: 150px;
 
     header {
-        width: 550px;
+        max-width: 550px;
         margin: 0 auto;
         margin-top: 100px;
     }
@@ -265,7 +274,6 @@ a.carousel_btn {
 // Aim section
 
 #aim_section {
-    
     height: 1000px;
 
     #aim_section, ::after, ::before {
@@ -293,8 +301,9 @@ a.carousel_btn {
         }
 
         article {
+            margin: 0 auto;
             margin-top: 100px;
-            padding-left: 150px;
+            width: 710px;
 
             header {
                 color: #ff826b;
@@ -308,7 +317,6 @@ a.carousel_btn {
 
             p {
                 font-size: 1.3em;
-                margin-right: 150px;
             }
 
             .carousel_btn {
@@ -352,12 +360,18 @@ a.carousel_btn {
             bottom: 70px;
         }
     }
-
 }
-// ----------------------
+ 
+
+ // ----------------------
 
 
-.circle-chart__circle {
+  .left_side svg.circle-chart {
+    width: 350px;
+    height: 350px;
+  }
+
+ .circle-chart__circle {
     animation: circle-chart-fill 2s reverse; /* 1 */ 
     transform: rotate(-90deg); /* 2, 3 */
     transform-origin: center; /* 4 */
@@ -372,6 +386,15 @@ a.carousel_btn {
     opacity: 0;
     transform: translateY(.5em);
   }
+
+  .left_side svg.circle-chart {
+    width: 350px;
+    height: 350px;
+  }
+
+  .left_side svg g text.circle-chart__percent {
+    font-size: .6em;
+  }
   
   @keyframes circle-chart-fill {
     to { stroke-dasharray: 0 100; }
@@ -382,7 +405,7 @@ a.carousel_btn {
       opacity: 1;
       transform: translateY(0);
     }
-  }
+}
 
 
 // Carousel secction
@@ -557,6 +580,10 @@ a.carousel_btn {
     margin-top: 150px;
     margin-bottom: 150px;
     height: 750px;
+
+    .small_screen_img {
+        display: none;
+    }
 
     h2 {
         margin-bottom: 50px;

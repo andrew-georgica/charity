@@ -183,6 +183,14 @@ a.carousel_btn {
   position: relative;
 }
 
+#header_section .header_content_wrapper_small_screen {
+  display: none;
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  padding-top: 150px;
+}
+
 .header_content_wrapper {
   position: absolute;
   width: 100%;
@@ -191,7 +199,7 @@ a.carousel_btn {
 }
 
 .header_content_wrapper header {
-  width: 550px;
+  max-width: 550px;
   margin: 0 auto;
   margin-top: 100px;
 }
@@ -281,8 +289,9 @@ a.carousel_btn {
 }
 
 #aim_section .right_side article {
+  margin: 0 auto;
   margin-top: 100px;
-  padding-left: 150px;
+  width: 710px;
 }
 
 #aim_section .right_side article header {
@@ -297,7 +306,6 @@ a.carousel_btn {
 
 #aim_section .right_side article p {
   font-size: 1.3em;
-  margin-right: 150px;
 }
 
 #aim_section .right_side article .carousel_btn {
@@ -338,6 +346,11 @@ a.carousel_btn {
   bottom: 70px;
 }
 
+.left_side svg.circle-chart {
+  width: 350px;
+  height: 350px;
+}
+
 .circle-chart__circle {
   animation: circle-chart-fill 2s reverse;
   /* 1 */
@@ -361,6 +374,15 @@ a.carousel_btn {
   opacity: 0;
   -webkit-transform: translateY(0.5em);
           transform: translateY(0.5em);
+}
+
+.left_side svg.circle-chart {
+  width: 350px;
+  height: 350px;
+}
+
+.left_side svg g text.circle-chart__percent {
+  font-size: .6em;
 }
 
 @-webkit-keyframes circle-chart-fill {
@@ -540,6 +562,10 @@ a.carousel_btn {
   margin-top: 150px;
   margin-bottom: 150px;
   height: 750px;
+}
+
+#about_us_section .small_screen_img {
+  display: none;
 }
 
 #about_us_section h2 {
