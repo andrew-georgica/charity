@@ -12,10 +12,9 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 
-    <!-- Owl Carousel -->
-    <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/owl.theme.default.css" rel="stylesheet">
-    <link href="css/owl.css" rel="stylesheet">
+    <!-- Menu -->
+    <link rel='stylesheet prefetch' href='http://daneden.github.io/animate.css/animate.min.css'>
+    <link rel="stylesheet" href="css/menu.css">
 
     <!-- Fonts -->
     <link href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -35,7 +34,7 @@
     <nav id="menu_section">
 
         <h2>
-            razom.in.ua
+          <a href="index.html">razom.in.ua</a>
         </h2>
     
         <ul id="big_screen_menu">
@@ -119,6 +118,7 @@
 
     <section id="page-wrapper">
 
+      <img src="img/main/src/1.png" alt="" id="parallax_img4">
       <img src="img/main/src/1.png" alt="" id="parallax_img8">
 
       <section id="project_section" class="container-fluid">
@@ -163,8 +163,20 @@
         </h3>
         
         <div class="row ">
+
+            <div id="small_screen_block" class="col-lg-6 col-md-6">
+                <div class="project_circle_wrapper">
+                  <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862"  xmlns="http://www.w3.org/2000/svg">
+                    <circle class="circle-chart__background" stroke="#fde1be" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                    <circle class="circle-chart__circle" stroke="#ff5a56" stroke-width="2" stroke-dasharray="70,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                    <g class="circle-chart__info">
+                      <text class="circle-chart__percent" x="16.91549431" y="16" alignment-baseline="central" text-anchor="middle"  fill="#ff5a56">70%</text>
+                    </g>
+                  </svg>
+                </div>
+            </div>
             
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6 col-sm-12">
 
                 <article class="list_wrapper">
                   <p>
@@ -195,26 +207,26 @@
 
             </div>
 
-            <div class="col-lg-6">
+            <div id="big_screen_block" class="col-lg-6 col-md-6">
                 <div class="project_circle_wrapper">
-                    <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="350" height="350" xmlns="http://www.w3.org/2000/svg">
-                        <circle class="circle-chart__background" stroke="#fde1be" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
-                        <circle class="circle-chart__circle" stroke="#ff5051" stroke-width="2" stroke-dasharray="50,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
-                        <g class="circle-chart__info">
-                            <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="10" fill="#ff5a56">50%</text>
-                        </g>
-                    </svg>
+                  <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862"  xmlns="http://www.w3.org/2000/svg">
+                    <circle class="circle-chart__background" stroke="#fde1be" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                    <circle class="circle-chart__circle" stroke="#ff5a56" stroke-width="2" stroke-dasharray="70,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                    <g class="circle-chart__info">
+                      <text class="circle-chart__percent" x="16.91549431" y="16" alignment-baseline="central" text-anchor="middle"  fill="#ff5a56">70%</text>
+                    </g>
+                  </svg>
                 </div>
             </div>
         </div>
 
         <div id="btn_wrapper" class="row">
-          <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="col-lg-6 col-md-6 col-sm-12">
               <a href="" data-toggle="modal" data-target="#modal1" class="carousel_btn">
                   Допомогти
               </a>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="col-lg-6 col-md-6 col-sm-12">
               <a href="" class="carousel_btn">
                   Перечислити гроші
               </a>
@@ -263,41 +275,41 @@
         <nav class="footer_nav">
           <ul>
             <li>
-              <a href="">
+              <a id="" href="all_projects_page.html">
+                Допомогти
+              </a>
+            </li>
+            <li>
+              <a href="about_us.html">
                 Про проект
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="#insert" id="link_6">
                 Потрібна допомога
               </a>
             </li>
             <li>
-              <a href="">
-                Допомогти   
+              <a href="blog.html" id="">
+                Блог та звіти
               </a>
             </li>
             <li>
-              <a href="">
-                Блог та звіти 
-              </a>
-            </li>
-            <li>
-              <a href="">
+              <a href="partners.html" id="link_7">
                 Меценати
               </a>
             </li>
             <li>
-              <a href="">
-                Контакти   
+              <a href="contacts.html" id="link_8">
+                Контакти
               </a>
-            </li>
+            </li> 
           </ul>
         </nav>
 
         <div class="footer_arrow">
 
-          <a href="" class="arrow_top">
+          <a href="#menu_section" class="arrow_top">
             <i class="fa fa-angle-up" aria-hidden="true"></i>
           </a>
 
@@ -348,17 +360,21 @@
     </section>
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <!-- <script src="js/bootstrap.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script> -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 
-     <!-- Owl Carousel -->
-     <script src="js/owl.carousel.js"></script>
-     <script src="js/owl.js"></script>
+    <script src="js/scroll.js"></script>
 
      <!-- Parallax -->
      <script src="js/parallax.js"></script>
+
+     <!-- Menu -->
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js'></script>
+    <script src="js/menu.js"></script>
 
   </body>
 </html>

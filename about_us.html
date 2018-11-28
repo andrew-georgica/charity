@@ -12,6 +12,10 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 
+    <!-- Menu -->
+    <link rel='stylesheet prefetch' href='http://daneden.github.io/animate.css/animate.min.css'>
+    <link rel="stylesheet" href="css/menu.css">
+
     <!-- Owl Carousel -->
     <link href="css/owl.carousel.css" rel="stylesheet">
     <link href="css/owl.theme.default.css" rel="stylesheet">
@@ -35,7 +39,7 @@
     <nav id="menu_section">
 
         <h2>
-            razom.in.ua
+          <a href="index.html">razom.in.ua</a>
         </h2>
     
         <ul id="big_screen_menu">
@@ -128,10 +132,12 @@
       <section id="about_us_page" class="container-fluid">
         <section class="about-us_founder">
           <div class="row">
-            <div class="col-lg-7">
+            <div class="col-lg-7 col-md-7 col-sm-7">
               <h2>
                 Про нас
               </h2>
+
+              <img src="img/about_us_section/src/2.jpg" alt="" class="img-fluid small_screen_img">
   
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -153,7 +159,7 @@
               </article>
               
             </div>
-            <div class="col-lg-5">
+            <div class="col-lg-5 col-md-5 col-sm-5">
               <div class="img_border"></div>
               <img src="img/about_us_section/src/1.jpg" alt="" class="img-fluid img_effect">
             </div>
@@ -162,16 +168,18 @@
 
         <section class="about-us_team">
           <div class="row">
-            <div class="col-lg-7">
+            <div class="col-lg-7 col-md-7 col-sm-5">
               <div class="img_border"></div>
               <img src="img/about_us_section/src/2.png" alt="" class="img-fluid img_effect">
             </div>
 
-            <div class="col-lg-5">
+            <div class="col-lg-5 col-md-5 col-sm-7">
 
               <h3>
                 Хто в команді?
               </h3>
+
+              <img src="img/about_us_section/src/2.png" alt="" class="img-fluid small_screen_img">
   
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -247,41 +255,41 @@
         <nav class="footer_nav">
           <ul>
             <li>
-              <a href="">
+              <a id="" href="all_projects_page.html">
+                Допомогти
+              </a>
+            </li>
+            <li>
+              <a href="about_us.html">
                 Про проект
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="#insert" id="link_6">
                 Потрібна допомога
               </a>
             </li>
             <li>
-              <a href="">
-                Допомогти   
+              <a href="blog.html" id="">
+                Блог та звіти
               </a>
             </li>
             <li>
-              <a href="">
-                Блог та звіти 
-              </a>
-            </li>
-            <li>
-              <a href="">
+              <a href="partners.html" id="link_7">
                 Меценати
               </a>
             </li>
             <li>
-              <a href="">
-                Контакти   
+              <a href="contacts.html" id="link_8">
+                Контакти
               </a>
-            </li>
+            </li> 
           </ul>
         </nav>
 
         <div class="footer_arrow">
 
-          <a href="" class="arrow_top">
+          <a href="#menu_section" class="arrow_top">
             <i class="fa fa-angle-up" aria-hidden="true"></i>
           </a>
 
@@ -295,50 +303,14 @@
     </section>
 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    
-    <section id="modals-section">
-
-      <div class="modal fade" id="modal1">
-        <div class="modal-dialog modal-md">
-          <div class="modal-content">
-            <div class="modal-body">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-
-              <h3>
-
-              </h3>
-
-              <form>
-                <h4>
-
-                </h4>
-
-                <input type="text" placeholder="ФИО*" name="name" pattern=".{5,}" title="Введите минимум 5 символов"  required>
-                <input type="text" name="tel" placeholder="Телефон*" pattern="\d*" title="Phone number should contain only digits." required >
-                <input type="text" name="email" placeholder="Email*" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Enter correct email" required >
-                <input type="text" placeholder="Город" name="city" pattern=".{2,}" title="Введите минимум 2 символов"  required>
-
-                <h4>
-
-                </h4>
-
-                <textarea cols="50" id="title" name="title" placeholder="Комментарий" rows="4"></textarea>
-                <input type="submit" value="Отправить">
-              </form>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <!-- <script src="js/bootstrap.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script> -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+    <script src="js/scroll.js"></script>
 
      <!-- Owl Carousel -->
      <script src="js/owl.carousel.js"></script>
@@ -346,6 +318,10 @@
 
      <!-- Parallax -->
      <script src="js/parallax.js"></script>
+
+     <!-- Menu -->
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js'></script>
+    <script src="js/menu.js"></script>
 
   </body>
 </html>

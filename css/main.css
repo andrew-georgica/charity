@@ -151,6 +151,11 @@ a.carousel_btn {
   float: left;
 }
 
+#menu_section h2 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 #menu_section ul {
   list-style-type: none;
   float: right;
@@ -346,7 +351,9 @@ a.carousel_btn {
   bottom: 70px;
 }
 
-.left_side svg.circle-chart {
+svg.circle-chart {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
   width: 350px;
   height: 350px;
 }
@@ -376,12 +383,12 @@ a.carousel_btn {
           transform: translateY(0.5em);
 }
 
-.left_side svg.circle-chart {
+svg.circle-chart {
   width: 350px;
   height: 350px;
 }
 
-.left_side svg g text.circle-chart__percent {
+svg g text.circle-chart__percent {
   font-size: .6em;
 }
 
@@ -595,6 +602,10 @@ a.carousel_btn {
   margin: 100px 90px;
 }
 
+#about_us_page .small_screen_img {
+  display: none;
+}
+
 #about_us_page .about-us_founder {
   height: 750px;
   padding-top: 50px;
@@ -616,6 +627,7 @@ a.carousel_btn {
 #about_us_page h4 {
   text-align: center;
   font-weight: bold;
+  margin-right: 0;
 }
 
 #about_us_page h4 span {
@@ -656,6 +668,18 @@ a.carousel_btn {
   margin: 150px 50px;
 }
 
+#project_section h2 {
+  margin-bottom: 40px;
+}
+
+#project_section #small_screen_block {
+  display: none;
+}
+
+#project_section .col-lg-6 {
+  margin-top: 30px;
+}
+
 #project_section img {
   display: block;
   margin: 0 auto;
@@ -694,10 +718,6 @@ a.carousel_btn {
   color: #ffd194;
 }
 
-#project_section #btn_wrapper {
-  margin-top: 100px;
-}
-
 #project_section .carousel_btn {
   display: block;
   position: relative;
@@ -717,6 +737,22 @@ a.carousel_btn {
 
 .all_projects {
   margin: 150px 100px;
+  margin-bottom: 0;
+}
+
+.all_projects #carousel_section {
+  margin-bottom: 0;
+}
+
+.all_projects #carousel_section h2 {
+  margin-top: 15px;
+  margin-bottom: 60px;
+  padding-top: 0;
+}
+
+.all_projects #carousel_section img {
+  display: block;
+  margin: 0 auto;
 }
 
 .all_projects #carousel_section #carousel_nav a {
@@ -895,5 +931,121 @@ a.carousel_btn {
   color: #ff5051;
   margin-bottom: 0;
   text-align: center;
+}
+
+.modal-content {
+  background: #ffd194;
+  background: -webkit-gradient(linear, right top, left top, from(#ff5051), to(#ffd194));
+  background: linear-gradient(to left, #ff5051 0%, #ffd194 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ff5051, endColorstr=#ffd194);
+  color: #ffffff;
+}
+
+.modal-content .close {
+  color: #ffffff;
+  font-size: 4em;
+  opacity: 1;
+}
+
+.modal-content .close:focus, .modal-content .close:hover {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.modal-content h3 {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.modal-content form {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.modal-content form h4 {
+  color: #ffffff;
+}
+
+.modal-content form input[type=text] {
+  background-color: transparent;
+  color: #2a2727;
+  font-family: "Comfortaa", cursive;
+  font-size: 1.7em;
+  border: 6px solid #ffffff;
+  padding-left: 20px;
+  width: 100%;
+  height: 65px;
+  outline: none;
+  margin-bottom: 30px;
+}
+
+.modal-content form input[type=text]::-webkit-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.modal-content form input[type=text]:-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.modal-content form input[type=text]::-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.modal-content form input[type=text]::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.modal-content form textarea {
+  border: 6px solid #ffffff;
+  background-color: transparent;
+  color: #2a2727;
+  font-family: "Comfortaa", cursive;
+  font-size: 1.7em;
+  padding-left: 20px;
+  width: 100%;
+  height: 2   00px;
+  outline: none;
+  margin-bottom: 30px;
+}
+
+.modal-content form textarea::-webkit-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.modal-content form textarea:-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.modal-content form textarea::-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.modal-content form textarea::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.modal-content form input[type=submit] {
+  background-color: transparent;
+  cursor: pointer;
+  display: block;
+  color: #ffffff;
+  font-family: "Comfortaa", cursive;
+  font-size: 1.7em;
+  width: 250px;
+  text-align: center;
+  text-decoration: none;
+  border: 6px solid #ffffff;
+  border-radius: 70px;
+  padding: 10px;
+  line-height: 35px;
 }
 /*# sourceMappingURL=main.css.map */

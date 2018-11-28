@@ -153,6 +153,11 @@ a.carousel_btn {
         margin-left: 20px;
         margin-top: 12px;
         float: left;
+
+        a {
+            text-decoration: none;
+            color: $menu_font_color;
+        }
     }
 
     ul {
@@ -366,7 +371,9 @@ a.carousel_btn {
  // ----------------------
 
 
-  .left_side svg.circle-chart {
+svg.circle-chart {
+    font-family: $content_font;
+    font-weight: bold;
     width: 350px;
     height: 350px;
   }
@@ -387,12 +394,12 @@ a.carousel_btn {
     transform: translateY(.5em);
   }
 
-  .left_side svg.circle-chart {
+svg.circle-chart {
     width: 350px;
     height: 350px;
   }
 
-  .left_side svg g text.circle-chart__percent {
+svg g text.circle-chart__percent {
     font-size: .6em;
   }
   
@@ -617,6 +624,10 @@ a.carousel_btn {
 
 #about_us_page {
     margin: 100px 90px;
+    
+    .small_screen_img {
+        display: none;
+    }
 
     .about-us_founder {
         height: 750px;
@@ -639,6 +650,7 @@ a.carousel_btn {
     h4 {
         text-align: center;
         font-weight: bold;
+        margin-right: 0;
 
         span {
             color: $page_second_color;
@@ -688,6 +700,18 @@ a.carousel_btn {
 #project_section {
     margin: 150px 50px;
 
+    h2 {
+        margin-bottom: 40px;
+    }
+
+    #small_screen_block {
+        display: none;
+    }
+
+    .col-lg-6 {
+        margin-top: 30px;
+    }
+
     img {
         display: block;
         margin: 0 auto;
@@ -728,7 +752,7 @@ a.carousel_btn {
     }
 
     #btn_wrapper {
-        margin-top: 100px;
+        
     }
 
     .carousel_btn {
@@ -757,10 +781,24 @@ a.carousel_btn {
 
 .all_projects {
     margin: 150px 100px;
+    margin-bottom: 0;
     
     #carousel_section {
+        margin-bottom: 0;
+
+        h2 {
+            margin-top: 15px;
+            margin-bottom: 60px;
+            padding-top: 0;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
     
         #carousel_nav {
+
             a {
                 background-color: transparent;
                 border-radius: 50px;
@@ -975,3 +1013,96 @@ a.carousel_btn {
 }
 
 // ----------------------
+
+
+// Modal window
+
+.modal-content {
+    @include linear-gradient($page_main_color, $page_second_color);
+    color: $menu_font_color;
+
+    .close {
+        color: $menu_font_color;
+        font-size: 4em;
+        opacity: 1;
+    }
+    
+    .close:focus, .close:hover {
+        color: $menu_font_color;
+        opacity: 1;
+    }
+
+    h3 {
+        color: $menu_font_color;
+        text-align: center;
+        margin-top: 25px;
+    }
+    
+    form {
+        margin-left: 50px;
+        margin-right: 50px;
+    
+        h4 {
+            color: $menu_font_color;
+        }
+    
+        input[type = text] {
+            background-color: transparent;
+            color: $content_color;
+            font-family: $title_font;
+            font-size: 1.7em;
+            border: 6px solid $menu_font_color;
+            padding-left: 20px;
+            width: 100%;
+            height: 65px;
+            outline: none;
+            margin-bottom: 30px;
+
+            &::placeholder {
+                color: $menu_font_color;
+                opacity: 1; 
+            }
+        }
+
+
+        textarea {
+            border: 6px solid $menu_font_color;
+            background-color: transparent;
+            color: $content_color;
+            font-family: $title_font;
+            font-size: 1.7em;
+            // border: none;
+            padding-left: 20px;
+            width: 100%;
+            height: 2   00px;
+            outline: none;
+            margin-bottom: 30px;
+
+            &::placeholder {
+                color: $menu_font_color;
+                opacity: 1; 
+            }
+        }
+        
+        input[type = submit] {
+            background-color: transparent;
+            cursor: pointer;
+            display: block;
+            color: $menu_font_color;
+            font-family: $title_font;
+            font-size: 1.7em;
+            width: 250px;
+            text-align: center;
+            text-decoration: none;
+            border: 6px solid $menu_font_color;
+            border-radius: 70px;
+            padding: 10px;
+            line-height: 35px;
+        }
+    }
+}
+
+
+
+// ---------------------- 
+ 

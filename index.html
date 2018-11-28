@@ -42,17 +42,17 @@
     <nav id="menu_section">
 
       <h2>
-        razom.in.ua
+        <a href="index.html">razom.in.ua</a>
       </h2>
 
       <ul id="big_screen_menu">
         <li>
-          <a href="all_projects_page.html">
+          <a id="" href="all_projects_page.html">
             Допомогти
           </a>
         </li>
         <li>
-          <a href="about_us.html" id="link_6">
+          <a href="about_us.html">
             Про проект
           </a>
         </li>
@@ -62,7 +62,7 @@
           </a>
         </li>
         <li>
-          <a href="blog.html" id="link_6">
+          <a href="blog.html" >
             Блог та звіти
           </a>
         </li>
@@ -94,7 +94,7 @@
               </a>
             </li>
             <li>
-              <a href="about_us.html" id="link_6">
+              <a href="about_us.html">
                 Про проект
               </a>
             </li>
@@ -104,7 +104,7 @@
               </a>
             </li>
             <li>
-              <a href="blog.html" id="link_6">
+              <a href="blog.html">
                 Блог та звіти
               </a>
             </li>
@@ -141,7 +141,7 @@
             <a href="" class="bd_btn">
                 Хочу допомогти
             </a>
-            <a href="" class="bd_btn">
+            <a href="#insert" id="link_4" class="bd_btn">
                 Потрібна допомога
             </a>
           </div>
@@ -172,8 +172,8 @@
                   <a href="" class="bd_btn">
                       Хочу допомогти
                   </a>
-                  <a href="" class="bd_btn">
-                      Потрібна допомога
+                  <a href="#insert" id="link_3" class="bd_btn">
+                    Потрібна допомога
                   </a>
                 </div>
                 
@@ -502,7 +502,7 @@
           <div class="arrows_block">
             <img class="img_left img-fluid" src="img/carousel_section/src/arr_left.png" alt="">
             <img class="img_right img-fluid" src="img/carousel_section/src/arr_right.png" alt="">
-            <a href="">
+            <a href="all_projects_page.html">
                 Всі проекти
             </a>
             
@@ -668,7 +668,7 @@
                 </h4>
               </article>
   
-              <a href="" class="bd_btn">
+              <a href="about_us.html" class="bd_btn">
                   Читати далі
               </a>
             </div>
@@ -720,41 +720,41 @@
         <nav class="footer_nav">
           <ul>
             <li>
-              <a href="">
+              <a id="" href="all_projects_page.html">
+                Допомогти
+              </a>
+            </li>
+            <li>
+              <a href="about_us.html">
                 Про проект
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="#insert" id="link_6">
                 Потрібна допомога
               </a>
             </li>
             <li>
-              <a href="">
-                Допомогти   
+              <a href="blog.html" id="">
+                Блог та звіти
               </a>
             </li>
             <li>
-              <a href="">
-                Блог та звіти 
-              </a>
-            </li>
-            <li>
-              <a href="">
+              <a href="partners.html" id="link_7">
                 Меценати
               </a>
             </li>
             <li>
-              <a href="">
-                Контакти   
+              <a href="contacts.html" id="link_8">
+                Контакти
               </a>
-            </li>
+            </li> 
           </ul>
         </nav>
 
         <div class="footer_arrow">
 
-          <a href="" class="arrow_top">
+          <a href="#menu_section" class="arrow_top">
             <i class="fa fa-angle-up" aria-hidden="true"></i>
           </a>
 
@@ -770,13 +770,13 @@
     <section id="modals-section">
 
       <div class="modal fade" id="modal1">
-        <div class="modal-dialog modal-md">
+        <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-body">
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 
               <h3>
-
+                Ми зв'яжемось з Вами найближчим часом
               </h3>
 
               <form>
@@ -784,7 +784,7 @@
 
                 </h4>
 
-                <input type="text" placeholder="ПІП*" name="name" pattern=".{5,}" title="Введіть мінімум 3 символи"  required>
+                <input type="text" placeholder="ПІП*" name="name" pattern=".{2,}" title="Введіть мінімум 2 символи"  required>
                 <input type="text" name="tel" placeholder="Телефон*" pattern="\d*" title="Номер повинен містити тільки цифри" required >
                 <input type="text" name="email" placeholder="Email*" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Введіть коректний email" required >
                 <input type="text" placeholder="Місто" name="city" pattern=".{2,}" title="Введіть мінімум 2 символа"  required>
@@ -804,11 +804,14 @@
 
     </section>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <!-- <script src="js/bootstrap.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script> -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+    <script src="js/scroll.js"></script>
 
      <!-- Owl Carousel -->
      <script src="js/owl.carousel.js"></script>
@@ -820,6 +823,7 @@
      <!-- Menu -->
     <script src='http://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js'></script>
     <script src="js/menu.js"></script>
+    
 
 
   </body>

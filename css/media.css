@@ -1,21 +1,39 @@
 
 @media screen and (max-width: 1845px) {
 
-    #big_screen_menu {
+    /* #big_screen_menu {
         display: none;  
     }
 
     #menu_section #toggle {
         display: block;
-    }
+    } */
 
     #menu_section #overlay {
         display: block;
     }
 
+    #about_us_page .about-us_team .img_border {
+        width: 800px;
+        height: 500px;
+    }
+
+    #about_us_page .about-us_team .img_effect {
+        width: 100%;
+        height: auto;
+    }
+
 }
 
 @media screen and (max-width: 1600px) {
+
+    #menu_section ul li a {
+        font-size: 1.5em;
+    }
+
+    #menu_section ul li {
+        margin-right: 20px;
+    }
 
     #parallax_img2 {
         top: 2400px;
@@ -131,10 +149,41 @@
         width: 400px;
     }
 
+
+    #about_us_page p {
+        padding-right: 0;
+        font-size: 1.5em;
+    }
+
+    #about_us_page .about-us_team {
+        height: 450px;
+        margin-top: 100px;
+        margin-bottom: 30px;
+    }
+
+    #about_us_page .about-us_team .img_effect {
+        margin-left: 0;
+    }
+
+    #about_us_page .about-us_team .img_border {
+        width: 700px;
+        height: 450px;
+        margin-left: 0;
+        top: 10px;
+    }
+
+    #about_us_page h3 {
+        font-size: 2.5em;
+    }
+
 }
 
 
 @media screen and (max-width: 1400px) {
+
+    #menu_section ul li a {
+        font-size: 1.3em;
+    }
 
     #parallax_img2 {
         top: 2200px;
@@ -144,8 +193,16 @@
         top: 4000px;
     }
 
+    #parallax_img8 {
+        top: 400px;
+    }
+
     h2 {
         font-size: 3em;
+    }
+
+    #carousel_section h2 {
+        padding-top: 30px;
     }
 
     .img_effect {
@@ -189,9 +246,76 @@
         width: 300px;
     }
 
+    #about_us_page .about-us_founder {
+        height: 560px;
+    }
+
+    #about_us_page h2 {
+        margin-bottom: 30px;
+    }
+
+    #about_us_page p {
+        padding-right: 0;
+        font-size: 1.2em;
+    }
+
+    #about_us_page .about-us_team .img_border {
+        width: 550px;
+        height: 340px;
+        margin-left: 0;
+        top: 45px;
+    }
+
+    #about_us_page h3 {
+        font-size: 2.2em;
+        margin-bottom: 40px;
+    }
+
+    .all_projects #carousel_section h2 {
+        margin-top: 35px;
+        margin-bottom: 60px;
+    }
+
+    #contact_page_content p {
+        font-size: 1.7em;
+    }
+
+    #project_section {
+        margin: 150px 50px;
+        margin-top: 130px;
+    }
+
+    #project_section h3 {
+        margin-bottom: 30px;
+        margin-top: 30px;
+        text-align: center;
+        font-size: 2.3em;
+    }
+    
+    #project_section p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.3em;
+    }
+
+    #project_section article.list_wrapper p {
+        font-size: 1.7em;
+    }
+
+    #project_section article.list_wrapper ul li {
+        font-size: 1.7em;
+    }
+
 }
 
 @media screen and (max-width: 1300px) {
+
+    #big_screen_menu {
+        display: none;  
+    }
+
+    #menu_section #toggle {
+        display: block;
+    }
 
     #parallax_img2 {
         top: 2000px;
@@ -199,6 +323,19 @@
 
     #parallax_img3 {
         top: 3800px;
+    }
+
+    #parallax_img5 {
+        z-index: 0;
+    }
+
+    #parallax_img6 {
+        z-index: 0;
+    }
+
+    #about_us_page .about-us_founder {
+        height: 590px;
+        padding-top: 30px;
     }
 
     .header_content_wrapper .btn_container a {
@@ -266,7 +403,7 @@
     }
 
     .item_content {
-        height: 270px;
+        height: 300px;
         padding-left: 30px;
         padding-right: 30px;
     }
@@ -359,16 +496,36 @@
         margin: 100px 0;
     }
 
+    #about_us_page {
+        margin: 100px 0;
+    }
+
+    #project_section .carousel_btn {
+        width: 410px;
+    }
+
+    #project_section article.list_wrapper p {
+        font-size: 1.5em;
+    }
+
+    #project_section article.list_wrapper ul li {
+        font-size: 1.5em;
+    }
+
+    /* #project_section #btn_wrapper {
+        margin-top: 50px;
+    } */
+
 }
 
 @media screen and (max-width: 1150px) {
 
-    .left_side svg.circle-chart {
+    svg.circle-chart {
         width: 330px;
         height: 330px;
     }
 
-    .left_side svg g text.circle-chart__percent {
+    svg g text.circle-chart__percent {
         font-size: .5em;
     }
 
@@ -458,6 +615,131 @@
         font-size: 5em;
     }
 
+    #about_us_page p {
+        padding-right: 50px;
+        font-size: 1em;
+    }
+
+    #about_us_page .about-us_team p {
+        padding-right: 0;
+    }
+
+    #about_us_page .about-us_projects p {
+        padding-right: 0;
+    }
+
+    #about_us_page img {
+        width: auto;
+        height: auto;
+        margin-left: -50px;
+    }
+
+    #partners_section header {
+        margin-top: 130px;
+    }
+
+    #partners_section header h2 {
+        margin-bottom: 30px;
+    }
+
+    #partners_section header p {
+        font-size: 1.5em;
+        margin-bottom: 50px;
+    }
+
+    #partners_section h3 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    #owl-4 .item h3 {
+        font-size: 1.7em;
+    }
+
+    #owl-4 .item p {
+        font-size: 1.2em;
+    }
+
+    #partners_section header#partners_second_header {
+        margin-top: 50px;
+    }
+
+    .all_projects {
+        margin-top: 120px;
+    }
+
+    .all_projects #carousel_section .tab-content {
+        margin-top: 50px;
+    }
+
+    .all_projects #carousel_section h2 {
+        margin-top: 35px;
+        margin-bottom: 40px;
+    }
+
+    .all_projects .item_content h3 {
+        font-size: 1.4em;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .all_projects .item_content p {
+        font-size: .9em;
+    }
+
+    .all_projects #carousel_section #carousel_nav a {
+        font-size: 1.12em;
+        width: 40px;
+        height: 40px;
+    }
+
+    .all_projects #carousel_section #carousel_nav a.first_point::after {
+        width: 150px;
+        top: 80px;
+    }
+
+    .all_projects #carousel_section #carousel_nav a.second_point::after {
+        margin-left: -63px;
+        width: 130px;
+        top: 80px;
+    }
+
+    .all_projects #carousel_section #carousel_nav a.third_point::after {
+        margin-left: -65px;
+        width: 135px;
+        top: 80px;
+    }
+
+    #contact_page_content {
+        margin: 0;
+        margin-top: 130px;
+    }
+
+    #contact_page_content h3 {
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    #contact_page_content p {
+        font-size: 1.3em;
+    }
+
+    #project_section h3 {
+        font-size: 2em;
+    }
+
+    #project_section p {
+        font-size: 1.1em;
+    }
+
+    #project_section article.list_wrapper p {
+        font-size: 1.3em;
+    }
+
+    #project_section article.list_wrapper ul li {
+        font-size: 1.3em;
+    }
+
 }
 
 
@@ -485,6 +767,78 @@
         font-size: 1.5em;
         text-align: center;
         margin-top: 20px;
+    }
+
+    .modal-content .close {
+        font-size: 3em;
+    }
+
+    .modal-content form {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .modal-content form input[type="text"] {
+        border: 3px solid #ffffff;
+    }
+
+    .modal-content form textarea {
+        border: 3px solid #ffffff;
+    }
+
+    .modal-content form input[type="submit"] {
+        border: 3px solid #ffffff;
+    }
+
+
+    #about_us_page img, #about_us_page .img_border {
+        margin-left: 0;
+    }
+
+    #about_us_page .about-us_team .img_border {
+        width: 450px;
+        height: 250px;
+    }
+
+    .all_projects {
+        margin: 0;
+        margin-top: 120px;
+    }
+
+    .all_projects #carousel_section .tab-content {
+        margin-top: 70px;
+    }
+
+    .all_projects #carousel_section .tab-content .col-lg-4 {
+        margin-bottom: 100px;
+    }
+
+    .all_projects .item_content h3 {
+        font-size: 1.7em;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .all_projects .item_content p {
+        font-size: 1.2em;
+    }   
+
+    #project_section {
+        margin: 0;
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+
+    #project_section h2 {
+        margin-bottom: 30px;
+    }
+
+    #project_section .documents {
+        margin-bottom: 90px;
+    }
+
+    #project_section .col-lg-6 {
+        margin-top: 50px;
     }
 
 }
@@ -517,16 +871,29 @@
         left: 50px;
         top: 10px;
     }
-    
 
+    .footer_nav {
+        display: none;
+    }
+    
+    #footer_section {
+        padding-bottom: 200px;
+    }
+
+    #about_us_page .img_border {
+        width: 280px;
+        height: 395px;
+    }
+
+    #about_us_page .about-us_team {
+        height: 370px;
+        margin-top: 50px;
+        margin-bottom: 35px;
+    }
 }
 
 
 @media screen and (max-width: 910px) {
-
-    #aim_section {
-        /* height: 970px; */
-    }
 
     #aim_section .right_side h2 {
         font-size: 3.5em;
@@ -557,6 +924,12 @@
 
     #aim_section .right_side article .carousel_btn {
         bottom: 50px;
+    }
+
+    #about_us_page .about-us_team {
+        height: 360px;
+        margin-top: 0;
+        margin-bottom: 35px;
     }
 
 }
@@ -644,6 +1017,56 @@
         font-size: 1.5em;
     }
 
+    #about_us_page .about-us_team {
+        height: 400px;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+
+    #about_us_page .about-us_team .img_effect {
+        margin-top: 65px;
+    }
+
+    #about_us_page .about-us_team .img_border {
+        width: 370px;
+        height: 200px;
+        top: 90px;
+    }
+
+    .all_projects #carousel_section h2 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .all_projects #carousel_section #carousel_nav a {
+        font-size: 1em;
+        width: 40px;
+        height: 40px;
+    }
+
+    .all_projects #carousel_section #carousel_nav a.first_point::after {
+        width: 120px;
+        top: 70px;
+        margin-left: -65px;
+    }
+
+    .all_projects #carousel_section #carousel_nav a.second_point::after {
+        margin-left: -43px;
+        width: 100px;
+        top: 70px;
+    }
+
+    .all_projects #carousel_section #carousel_nav a.third_point::after {
+        margin-left: -35px;
+        width: 85px;
+        top: 70px;
+    }
+
+    #project_section .carousel_btn {
+        width: 340px;
+        font-size: 1.2em;
+    }
+
 }
 
 
@@ -663,6 +1086,21 @@
 
     #contacts_section .icons_block a {
         font-size: 4em;
+    }
+
+    #about_us_page p {
+        padding-right: 50px;
+        font-size: .9em;    
+    }
+
+    #about_us_page img, #about_us_page .img_border {
+        margin-left: -50px;
+    }
+
+    .all_projects #carousel_section #carousel_nav a {
+        font-size: 1em;
+        width: 30px;
+        height: 30px;
     }
 
 }
@@ -716,6 +1154,31 @@
         bottom: 150px;
     }
 
+    #about_us_page .img_border {
+        width: 250px;
+        height: 350px;
+    }
+
+    #about_us_page .about-us_team {
+        height: 400px;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    #about_us_page h3 {
+        font-size: 2em;
+        margin-bottom: 40px;
+    }
+
+    #partners_section header h2 {
+        margin-bottom: 20px;
+    }
+
+    #partners_section header p {
+        font-size: 1.3em;
+        margin-bottom: 40px;
+    }
+
 }
 
 
@@ -746,6 +1209,89 @@
 
     #carousel_section #carousel_nav {
         margin-bottom: 75px;
+    }
+
+    #about_us_page .about-us_team {
+        height: auto;
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+
+    #about_us_page .about-us_team .img_border {
+        width: 250px;
+        height: 130px;
+        top: 70px;
+        left: 25px;
+    }
+
+    #about_us_page .about-us_team .img_effect {
+        margin-top: 43px;
+    }
+
+    .all_projects {
+        margin-top: 90px;
+    }
+
+    .all_projects #carousel_section h2 {
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+
+    .all_projects .item_content h3 {
+        font-size: 1.7em;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .all_projects #carousel_section .tab-content {
+        margin-top: 20px;
+    }
+
+    .all_projects .item_content {
+        height: 250px;
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+
+    #contact_page_content h3 {
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    #contact_page_content h2 {
+        margin-bottom: 35px;
+    }
+
+    #contact_page_content article {
+        margin-bottom: 25px;
+    }
+
+    #contact_page_content .col-lg-4 {
+        margin-bottom: 20px;
+    }
+
+    #big_screen_block {
+        display: none;
+    }
+
+    #project_section #small_screen_block {
+        display: block;
+    }
+
+    #project_section article.list_wrapper {
+        width: 305px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    #project_section article.list_wrapper ul {
+        list-style: none;
+        text-align: left;
+        padding-left: 0;
+    }
+
+    #project_section #btn_wrapper .col-lg-6 {
+        margin-top: 30px;
     }
 
 }
@@ -782,6 +1328,34 @@
         padding: 2px;
         width: 240px;
         border: 3px solid #ff5051;
+    }
+
+    #about_us_page .about-us_founder {
+        height: auto;
+        padding-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    #about_us_page img, #about_us_page .img_border {
+        margin-top: 60px;
+    }
+
+    #about_us_page .img_border {
+        left: 4px;
+        top: 30px;
+    }
+   
+    #about_us_page .about-us_team .img_border {
+        width: 200px;
+        height: 90px;
+        top: 70px;
+        left: 25px;
+    }
+
+    .all_projects .item_content {
+        height: 250px;
+        padding-left: 25px;
+        padding-right: 25px;
     }
 
 }
@@ -845,11 +1419,50 @@
         font-size: 1.2em;
     }
 
+    #about_us_page .img_border {
+        width: 220px;
+        height: 300px;
+    }
+
+    #about_us_page img, #about_us_page .img_border {
+        margin-top: 100px;
+    }
+
+    #about_us_page .about-us_founder {
+        padding-top: 20px;
+        height: auto;
+    }
+
+    #about_us_page article {
+        margin-top: 20px;
+    }
+
+    #about_us_page .about-us_team .img_border {
+        width: 200px;
+        height: 90px;
+        top: 10px;
+        left: 25px;
+    }
+
+    #about_us_page .about-us_team .img_effect {
+        margin-top: 85px;
+    }
+
+    .all_projects .item_content {
+        height: 250px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
 }
 
 
 
 @media screen and (max-width: 575px) {
+
+    #menu_section .overlay ul li a {
+        font-size: 1em;
+    }
 
     /* .left_side svg.circle-chart {
         width: 330px;
@@ -982,21 +1595,69 @@
         margin: 50px auto;
     }
 
+    .modal-content .close {
+        font-size: 3em;
+    }
+
+    .modal-content form {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .modal-content form input[type="text"] {
+        border: 2px solid #ffffff;
+        font-size: 1.3em;
+    }
+
+    .modal-content form textarea {
+        border: 2px solid #ffffff;
+        font-size: 1.3em;
+    }
+
+    .modal-content form input[type="submit"] {
+        border: 3px solid #ffffff;
+        font-size: 1.3em;
+        width: 220px;
+        padding: 5px;
+    }
+
+    #about_us_page img.small_screen_img {
+        margin: 30px auto;
+        display: block;
+    }
+
+    #about_us_page p {
+        padding-right: 0;
+    }
+
+    #about_us_page h3 {
+        font-size: 2em;
+        margin-bottom: 0;
+    }
+
+    #about_us_page .about-us_projects h3 {
+        margin-bottom: 50px;
+    }
+
 }
 
 
 @media screen and (max-width: 450px) {
 
+    #menu_section .overlay ul li a {
+        font-size: .8em;
+    }
+
     .header_content_wrapper {
         background-image: url("../img/header_section/src/4.jpg");
     }
 
-     .left_side svg.circle-chart {
+    svg.circle-chart {
         width: 300px;
         height: 300px;
     }
 
-    .left_side svg g text.circle-chart__percent {
+    svg g text.circle-chart__percent {
         font-size: .5em;
     }
 
@@ -1046,7 +1707,67 @@
     }
 
     #contacts_section p {
-        font-size: 1.3em;
+        font-size: 1.2em;
+    }
+
+    #about_us_page h3 {
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    #about_us_page .about-us_projects h3 {
+        margin-bottom: 30px;
+    }
+
+    #about_us_page .about-us_projects p {
+        margin-top: 30px;
+    }
+
+    #partners_section header {
+        text-align: center;
+        margin-top: 130px;
+    }
+
+    #partners_section header h2 {
+        margin-bottom: 30px;
+    }
+
+    #partners_section header p {
+        margin-bottom: 30px;
+    }
+
+    .all_projects .item_content h3 {
+        font-size: 1.5em;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .all_projects .item_content p {
+        font-size: 1em;
+    }
+
+    #contact_page_content h3 {
+        font-weight: 700;
+        margin-bottom: 10px;
+        font-size: 1.5em;
+    }
+
+    #contact_page_content .col-lg-4 {
+        margin-bottom: 10px;
+    }
+
+    #project_section h3 {
+        font-size: 1.7em;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    #project_section p {
+        font-size: 1em;
+    }
+
+    #project_section article.list_wrapper p {
+        font-size: 1.2em;
     }
 
 }
@@ -1061,6 +1782,25 @@
 
     .item_content p {
         font-size: .9em;
+    }
+
+    .all_projects #carousel_section #carousel_nav a {
+        font-size: .9em;
+    }
+
+    .all_projects #carousel_section #carousel_nav a.first_point::after {
+        width: 100px;
+        margin-left: -55px;
+    }
+
+    .all_projects #carousel_section #carousel_nav a.second_point::after {
+        margin-left: -35px;
+        width: 80px;
+    }
+
+    .all_projects #carousel_section #carousel_nav a.third_point::after {
+        margin-left: -30px;
+        top: 70px;
     }
 
 }
@@ -1095,7 +1835,7 @@
         font-size: 3em;
     }
 
-    .left_side svg.circle-chart {
+    svg.circle-chart {
         width: 250px;
         height: 250px;
     }
@@ -1104,10 +1844,108 @@
         font-size: 1.1em;
     }
 
+    .modal-content .close {
+        font-size: 2em;
+    }
+
+    .modal-content form input[type="text"] {
+        font-size: 1em;
+        height: 55px;
+    }
+    
+    .modal-content form textarea {
+        font-size: 1em;
+    }
+
+    #project_section .carousel_btn {
+        width: 280px;
+        font-size: .95em;
+    }
+
+    #project_section article.list_wrapper {
+        width: 280px;
+    }
+
+    #project_section p {
+        font-size: .9em;
+    }
+
 }
 
 
 /* ---------------------------- */
+
+@media screen and (min-height: 1024px) {
+
+    .header_content_wrapper {
+        display: none;
+    }
+
+    #header_section .header_content_wrapper_small_screen {
+        display: block;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    .header_content_wrapper_small_screen .btn_container a {
+        display: inline-block;
+        padding: 5px;
+        margin-bottom: 25px;
+        font-size: 1em;
+        width: 215px;
+        border: 4px solid #ff5051;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .header_content_wrapper_small_screen h2 {
+        font-size: 3em;
+        margin-bottom: 30px;    
+    }
+
+    .header_content_wrapper_small_screen p {
+        margin-bottom: 30px;
+    }
+
+    #aim_section {
+        padding-top: 0;
+    }
+}
+
+
+@media (max-height: 1080px) and (min-width: 1920px) {
+
+    #header_section .header_content_wrapper_small_screen {
+        display: none;
+    }
+
+    .header_content_wrapper {
+        display: block;
+    }
+
+}
+
+
+@media screen and (max-height: 850px) {
+    .header_content_wrapper {
+        display: block;
+    }
+
+    #header_section .header_content_wrapper_small_screen {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .header_content_wrapper {
+        display: flex;
+        background-image: url("../img/header_section/src/4.jpg");
+    }
+}
 
 
 @media screen and (max-height: 535px) {
@@ -1118,13 +1956,133 @@
 
     #header_section .header_content_wrapper_small_screen {
         display: block;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
     }
 
     .header_content_wrapper_small_screen .btn_container a {
+        display: inline-block;
         padding: 5px;
         margin-bottom: 25px;
         font-size: 1em;
         width: 215px;
         border: 4px solid #ff5051;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .header_content_wrapper_small_screen h2 {
+        font-size: 3em;
+        margin-bottom: 30px;    
+    }
+
+    .header_content_wrapper_small_screen p {
+        margin-bottom: 30px;
+    }
+
+    #aim_section {
+        padding-top: 0;
     }
 }
+
+@media screen and (max-height: 480px) {
+
+    #header_section .header_content_wrapper_small_screen {
+        padding-top: 75px;
+    }
+
+    .header_content_wrapper_small_screen h2 {
+        font-size: 2.5em;
+        margin-bottom: 20px;    
+    }
+
+    .header_content_wrapper_small_screen p {
+        font-size: 1.2em;
+    }
+
+}
+
+
+@media screen and (max-height: 375px) {
+
+    .header_content_wrapper_small_screen h2 {
+        font-size: 2.7em;
+        margin-bottom: 20px;    
+    }
+
+    #menu_section {
+        height: 70px;
+    }
+
+    #menu_section h2 {
+        font-size: 2.5em;
+        margin-top: 14px;
+    }
+
+    .button_container {
+        top: 20px;
+    }
+
+    #header_section .header_content_wrapper_small_screen {
+        padding-top: 65px;
+    }
+
+    .header_content_wrapper_small_screen .btn_container a {
+        display: inline-block;
+        width: 200px;
+        font-size: .9em;
+    }
+
+}
+
+@media screen and (max-height: 320px) {
+
+    .header_content_wrapper header {
+        margin-top: 70px;
+    }
+
+    .header_content_wrapper h2 {
+        font-size: 2em;
+        margin-bottom: 20px;    
+    }
+
+    .header_content_wrapper p {
+        font-size: 1.2em;
+    }
+
+    .header_content_wrapper {
+        display: block;
+        padding-top: 35px;
+    }
+
+    .header_content_wrapper .btn_container a {
+        width: 200px;
+    }
+
+    #header_section .header_content_wrapper_small_screen {
+        display: none;
+    }
+
+    .header_content_wrapper_small_screen h2 {
+        font-size: 2.2em;
+        margin-bottom: 15px;
+    }
+
+    .header_content_wrapper_small_screen p {
+        margin-bottom: 25px;
+        font-size: 1.3em;
+    }
+
+    #aim_section {
+        padding-top: 50px;
+    }
+
+}
+
+
+
+
+
